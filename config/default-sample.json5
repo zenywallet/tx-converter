@@ -1,0 +1,25 @@
+{
+    rpc: {
+        host: 'localhost',
+        port: 9252,
+        user: 'username',
+        pass: 'password'
+    },
+    server: {
+        http_port: 4000
+    },
+    networks: {
+        bitzeny: {
+            messagePrefix: '\u0018BitZeny Signed Message:\n',
+            bech32: 'sz',
+            bip32: {
+                public: 0x0488b21e,
+                private: 0x0488ade4
+            },
+            pubKeyHash: 0x51,
+            scriptHash: 0x05,
+            wif: 0x80
+        }
+    },
+    target_network: 'bitzeny'
+}
